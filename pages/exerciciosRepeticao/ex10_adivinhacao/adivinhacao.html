@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>jogo da adivinhação</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                10 - Jogo da Adivinhação: <br>
+                Escreva um programa que gere um número aleatório entre 1 e 100 e peça ao usuário para adivinhar o número. O programa deve informar se o palpite está muito alto, muito baixo ou correto.
+            </p>
+        </div>
+
+        <form action="adivinhacao.php" method="post">
+            <label for="palpite">Digite seu palpite (1 a 100):</label>
+            <input type="number" class="inp" id="palpite" name="palpite" min="1" max="100" required>
+
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Enviar">
+        </form>
+
+        <div class="saidaDados">
+            
+        </div>
+    </div>
+</body>
+</html>

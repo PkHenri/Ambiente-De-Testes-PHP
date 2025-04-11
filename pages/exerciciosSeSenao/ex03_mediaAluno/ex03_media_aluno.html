@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>Média do Aluno</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                03 - Média do aluno:
+                Receba QUATRO notas de um aluno e calcule a média.
+                Se a média for maior ou igual a 7, exiba "Aprovado";
+                se for entre 4 e 6.9 - escreva RECUPERAÇÃO, caso contrário, exiba "Reprovado".
+            </p>
+        </div>
+        <form action="mediaAluno.php" method="post">
+            <div class="item">
+                <label for="notas">Digite as notas do aluno:</label> <br>
+                <input type="text" class="inp" name="txtNotaUm" required>
+                <input type="text" class="inp" name="txtNotaDois" required>
+                <input type="text" class="inp" name="txtNotaTres" required>
+                <input type="text" class="inp" name="txtNotaQuatro" required>
+            </div>
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Enviar">
+        </form>
+        <div class="saidaDados">
+
+        </div>
+    </div>
+</body>
+</html>

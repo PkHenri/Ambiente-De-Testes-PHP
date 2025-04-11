@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>IMC</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                07 - IMC:
+                Classificação de IMC: Receba o peso e a
+                altura de uma pessoa, calcule o IMC e
+                classifique-o de acordo com a tabela:
+                Abaixo de 18.5: Abaixo do peso
+                18.5 a 24.9: Peso normal
+                25 a 29.9: Sobrepeso
+                Acima de 30: Obesidade.
+            </p>
+        </div>
+        <form action="imc.php" method="post">
+            <div class="item">
+                <input type="text" name="txtPeso" class="inp" placeholder="Seu peso. Ex:55" required>
+                <input type="text" name="txtAltura" class="inp" placeholder="Sua altura. Ex:1.50" required>
+            </div>
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Enviar">
+        </form>
+        <div class="saidaDados">
+            
+        </div>
+    </div>
+</body>
+</html>

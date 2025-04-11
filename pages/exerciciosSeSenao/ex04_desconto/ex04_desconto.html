@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>Desconto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                04 - Desconto:
+                Receba o valor de uma compra.
+                Se o valor for maior que R$ 500 e menor IGUAL que R$ 1000, aplique um desconto de 5%
+                SE FOR maior que R$ 1000,00  e menor IGUAL que R$ 5000, aplique um desconto de 10%
+                SE FOR maior que R$ 5000,00  e menor IGUAL que R$ 10000, aplique um desconto de 15% ;
+                SE FOR maior que R$ 10000,00  e menor IGUAL que R$ 30000, aplique um desconto de 20% ,
+                SE FOR maior que R$ 30000,00  aplique um desconto de 30% caso contrário, não aplique desconto.
+                Exiba NO FINAL - VALOR DA COMPRA- VALOR DO DESCONTO - PERCENTUAL APLICADO E VALOR TOTAL COM DESCONTO. 
+            </p>
+        </div>
+        <form action="desconto.php" method="post">
+            <div class="item">
+                <Label for="Compra">Digite o valor da compra R$: </Label> <br>
+                <input type="text" name="txtValorCompra" class="inp" required>
+            </div>
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Enviar">
+        </form>
+        <div class="saidaDados">
+
+        </div>
+    </div>    
+</body>
+</html>

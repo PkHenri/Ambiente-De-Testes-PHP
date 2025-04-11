@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>Verificação de senha e login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                06 - Verifica login e senha:
+                Crie um script que peça para o usuário digitar UM LOGIN E UMA SENHA senha.
+                Se O LOGIN FOR "admin" e a SENHA for igual a "senha123", exiba "Acesso concedido";
+                caso contrário, exiba "Acesso negado".
+                Se o acesso for negado deve ter um link para voltar para o formulario.
+            </p>
+        </div>
+        <form action="loginSenha.php" method="post">
+            <div class="item">
+                <input type="text" name="txtLogin" class="inp" placeholder="Login" required>
+                <input type="text" name="txtSenha" class="inp" placeholder="Senha" required>
+            </div>
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Enviar">
+        </form>
+        <div class="saidaDados">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>Triângulo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                08 - Classificação triângulo
+                um triângulo. Verifique se os lados formam um triângulo válido 
+                (a soma de dois lados deve ser maior que o terceiro).
+                Se for um triângulo válido, classifique-o como:
+                Equilátero (todos os lados iguais)
+                Isósceles (dois lados iguais)
+                Escaleno (todos os lados diferentes)
+                Se não for um triângulo válido, exiba uma mensagem de erro.
+            </p>
+        </div>
+        <form action="triangulo.php" method="post">
+            <div class="item">
+                <input type="text" name="txtLadoA" class="inp" placeholder="Lado 1" required>
+                <input type="text" name="txtLadoB" class="inp" placeholder="lado 2" required>
+                <input type="text" name="txtLadoC" class="inp" placeholder="lado 3" required>
+            </div>
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Enviar">
+        </form>
+        <div class="saidaDados">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>Restaurante Bem-Bão</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                13 - Restaurante Bem-Bão: <br>
+                O restaurante a quilo Bem-Bão cobra R$12,00 por cada quilo de refeição. Escreva um 
+                algoritmo que leia o peso do prato montado pelo cliente (em quilos) e imprima o valor a 
+                pagar. Assuma que a balança já desconte o peso do prato entradas via formulario).
+            </p>
+        </div>
+
+        <form action="bemBao.php" method="post">
+            <input type="text" name="txtPeso" id="txtPeso" class="inp" placeholder="Digite o peso do prato montado (em quilos)" required min="1">
+
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Enviar">
+        </form>
+
+        <div class="saidaDados">
+
+        </div>
+    </div>
+</body>
+</html>

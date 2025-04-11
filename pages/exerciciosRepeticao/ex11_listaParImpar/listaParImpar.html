@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>Listas em pares e ímpares</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                11 - Listas em Pares e Ímpares: <br>
+                Crie um programa em PHP que gere duas listas: uma contendo os números pares e outra 
+                contendo os números ímpares. 
+                O programa deve solicitar ao usuário um número inteiro positivo para definir o limite da 
+                lista que iniciará em 1. 
+                Exibir na tela a lista do 1 até o número digitado pelo usuário, dos algarismos pares desse 
+                intervalo; 
+                Exibir na tela a segunda lista do 1 até o número digitado pelo usuário, dos algarismos 
+                ímpares desse intervalo;
+            </p>
+        </div>
+
+        <form action="listaParImpar.php" method="post">
+            <input type="number" name="txtNumero" id="txtNumero" class="inp" placeholder="Digite um número aqui" required min="1">
+
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Enviar">
+        </form>
+
+        <div class="saidaDados">
+            
+        </div>
+
+    </div>
+</body>
+</html>

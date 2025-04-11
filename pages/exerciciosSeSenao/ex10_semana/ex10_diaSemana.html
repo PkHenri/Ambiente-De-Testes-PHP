@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>Dia da Semana</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                10 - Dia da semana estendido:
+                Receba um número de 1 a 7.
+                Exiba o dia da semana correspondente, mas adicione:
+                "Fim de semana" para sábado e domingo.
+                "Dia útil" para os demais dias.
+                Trate entradas inválidas (números fora do intervalo de 1 a 7).
+            </p>
+        </div>
+        <form action="diaSemana.php" method="post">
+            <div class="item">
+                <label for="dia">Digite um número de 1 a 7:</label> <br>
+                <input type="text" name="txtDia" class="inp" placeholder="Ex: 5" required>
+            </div>
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Enviar">
+        </form>
+        <div class="saidaDados">
+
+        </div>
+    </div>
+</body>
+</html>
