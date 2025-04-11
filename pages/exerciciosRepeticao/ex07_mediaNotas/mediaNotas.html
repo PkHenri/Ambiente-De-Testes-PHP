@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>Boletim</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                7 - Média de notas: <br>
+                Crie um programa que peça ao usuário para inserir a disciplina, o nome do aluno e 5 
+                notas e calcule a média. Toda vez que terminar o calculo de uma media, exibir o boletim 
+                daquele aluno e verificar se pretende realizar um novo cadastro, se sim retornar ao 
+                formulario (usar o laço para retornar), o programa só deve finalizar se ao final de exibir um 
+                boletim o usuário não desejar cadastrar mais, nesse caso, deve voltar para a pagina 
+                principal.
+            </p>
+        </div>
+
+        <form action="mediaNotas.php" method="post">
+            <input type="text" id="disciplina" name="disciplina" class="inp" placeholder="Disciplina" required>
+            <input type="text" id="nomeAluno" name="nomeAluno" class="inp" placeholder="Nome do Aluno" required>
+            <input type="number" id="nota1" name="nota1" class="inp" minlength="1" placeholder="Nota 1" required>
+            <input type="number" id="nota2" name="nota2" class="inp" minlength="1" placeholder="Nota 2" required>
+            <input type="number" id="nota3" name="nota3" class="inp" minlength="1" placeholder="Nota 3" required>
+            <input type="number" id="nota4" name="nota4" class="inp" minlength="1" placeholder="Nota 4" required>
+            <input type="number" id="nota5" name="nota5" class="inp" minlength="1" placeholder="Nota 5" required>
+
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Enviar"></input>
+        </form>
+        
+        <div class="saidaDados">
+            
+        </div>
+        <br><br>
+        <a name="btnNovo" class="btnEnviar" href="mediaNotas.html">Novo Cadastro</a>
+    </div>
+</body>
+</html>
