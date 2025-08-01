@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>Operações Matemáticas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                05 - Operações Matemáticas:
+                Elabore um programa que leia dois números inteiros e um operador matemático (+, -, *, /) e, com base nesses valores, calcule e mostre o resultado da operação. O programa deve verificar se a operação é válida e se a divisão não está tentando dividir por zero.
+            </p>
+        </div>  
+
+        <form action="opMatematica.php" method="post">
+            <div class="item">
+                <label for="numero1">Digite o primeiro número:</label>
+                <input type="number" name="numero1" id="numero1" class="inp" required>
+            </div>
+            <div class="item">
+                <label for="numero2">Digite o segundo número:</label>
+                <input type="number" name="numero2" id="numero2" class="inp" required>
+            </div>
+            <div class="item">
+                <label for="operador">Escolha um operador (+, -, *, /):</label>
+                <input type="text" name="operador" id="operador" class="inp" required maxlength="1">
+            </div>
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Calcular">
+        </form>
+
+        <div class="saidaDados">
+            <!-- Resultados serão exibidos aqui -->
+        </div>
+
+        <a href="../../switchcase.html" class="btnVoltar">Voltar</a>
+
+    </div>
+</body>
+</html>

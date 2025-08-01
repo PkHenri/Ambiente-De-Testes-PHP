@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>Calculo de desconto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                07 - Cálculo de desconto:
+                Crie um programa que leia o valor de uma compra e o tipo de cliente (novo, regular ou vip). Com base no tipo de cliente, aplique um desconto na compra:
+                · Cliente novo: 5% de desconto
+                · Cliente regular: 10% de desconto
+                · Cliente vip: 15% de desconto
+                O programa deve exibir o valor final com o desconto aplicado.
+            </p>
+        </div>
+
+        <form action="calcDesconto.php" method="post">
+            <div class="item">
+                <label for="valorCompra">Valor da compra: </label> <br>
+                <input type="number" name="txtValorCompra" class="inp" step="0.01" required>
+            </div>
+
+            <div class="item">
+                <label for="tipoCliente">Tipo de cliente: </label> <br>
+                <select name="txtTipoCliente" class="inp" required>
+                    <option value="" disabled selected>Selecione o tipo de cliente</option>
+                    <option value="novo">Novo</option>
+                    <option value="regular">Regular</option>
+                    <option value="vip">VIP</option>
+                </select>
+            </div>
+
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Enviar">
+        </form>
+
+        <div class="saidaDados">
+            <!-- Resultado será exibido aqui -->
+        </div>
+
+        <a href="../../switchcase.html" class="btnVoltar">Voltar</a>
+
+    </div>
+</body>
+</html>

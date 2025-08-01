@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>Avaliação de Notas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                04 - Sistema de Avaliação de Notas:
+                Crie um programa que leia a nota de um aluno (de 0 a 10) e, com base nessa nota, exiba a avaliação do desempenho do aluno. As avaliações são as seguintes:
+                · Nota 10: "Excelente!"
+                · Nota entre 8 e 9: "Muito Bom!"
+                · Nota entre 6 e 7: "Bom!"
+                · Nota 5: "Suficiente!"
+                · Nota abaixo de 5: "Insuficiente!"
+            </p>
+        </div>
+
+        <form action="avNotas.php" method="post">
+            <div class="item">
+                <label for="nota">Digite uma nota (0 a 10):</label> <br>
+                <input type="number" name="txtNota" class="inp" min="0" max="10" step="0.1" required>
+            </div>
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Enviar">
+        </form>
+
+        <div class="saidaDados">
+            <!-- Resultados serão exibidos aqui -->
+        </div>
+
+        <a href="../../switchcase.html" class="btnVoltar">Voltar</a>
+
+    </div>
+</body>
+</html>

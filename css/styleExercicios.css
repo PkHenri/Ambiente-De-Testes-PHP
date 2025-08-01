@@ -1,49 +1,51 @@
 /*Alguns estilos eu peguei do site UIverse.io*/
-*{
+* {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: #333;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    background-color: #333; 
+    background-color: #9e8f8f;
 }
 
-.container{
+.container {
     width: 75%;
     text-align: center;
-    background-color: #605a5a;
+    background-color: #cac6c6;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
 }
 
-.enunciado{
+.enunciado {
     width: 50%;
     margin: 0 auto 20px;
     text-align: center;
-    color: white;
+    color: #333;
     font-size: 18px;
 }
 
-.txtEnunciado{
+.txtEnunciado {
     text-align: center;
+    color: #444;
 }
 
-.item{
-    color: white;
+.item {
+    color: #333;
     margin-bottom: 15px;
     text-align: center;
 }
 
 .inp {
-    background-color: #212121;
-    color: white;
+    background-color: #fff;
+    color: #333;
     padding: 10px;
-    border: 2px solid white;
+    border: 2px solid #b6acac;
     border-radius: 5px;
     margin: 10px auto;
     display: block;
@@ -53,42 +55,35 @@ body{
 }
 
 .inp:focus {
-    color: rgb(0, 255, 255);
-    background-color: #212121;
-    outline-color: rgb(0, 255, 255);
-    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    color: #333;
+    background-color: #fff;
+    outline-color: #b6acac;
+    box-shadow: 0 0 5px #b6acac;
     transition: .1s;
-    transition-property: box-shadow;
 }
 
-.btnEnviar {
-    font: inherit;
-    background-color: #f0f0f0;
-    border: 0;
-    color: #242424;
-    border-radius: 0.5em;
-    font-size: 1.35rem;
-    padding: 0.375em 1em;
-    font-weight: 600;
-    text-shadow: 0 0.0625em 0 #fff;
-    box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
-        0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
-        0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
-    transition: 0.15s ease;
+.btnEnviar, .btnVoltar {
+    display: inline-block;
+    margin: 30px 10px 0;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    border: none;
     cursor: pointer;
-    margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
-.btnEnviar:active {
-    translate: 0 0.225em;
-    box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
-        0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
-        0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+.btnEnviar:hover, .btnVoltar:hover {
+    background-color: #444;
 }
 
-.saidaDados{
+.saidaDados {
     text-align: center;
     margin-top: 20px;
     font-size: 18px;
-    color: white;
+    color: #333;
 }

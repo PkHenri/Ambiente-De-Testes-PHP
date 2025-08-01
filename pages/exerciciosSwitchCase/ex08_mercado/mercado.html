@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>Mercado</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                8. Mercado <br>
+                Suponha que você esteja desenvolvendo um programa para o caixa da mercearia do seu bairro. 
+                Esse programa deve ser capaz de somar o valor unitário de um produto do comércio recebendo 
+                como entrada apenas o código identificador dele. Para verificar o bom funcionamento da 
+                funcionalidade de soma de valor através do código você decidiu realizar testes apenas com uma 
+                parte dos produtos vendidos, para isso criou a seguinte tabela:
+                <br><br>
+                Código 100: Detergente - R$ 1,59<br>
+                Código 101: Esponja - R$ 4,59<br>
+                Código 102: Lã de aço - R$ 1,79<br>
+            </p>
+        </div>
+
+        <form action="mercado.php" method="post">
+            <div class="item">
+                <label for="codigo">Digite o código do produto:</label><br>
+                <input type="number" name="txtCodigo" class="inp" placeholder="Ex: 100" required>
+            </div>
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Enviar">
+        </form>
+
+        <div class="saidaDados">
+
+        </div>
+        <a href="../../switchcase.html" class="btnVoltar">Voltar</a>
+    </div>
+</body>
+</html>

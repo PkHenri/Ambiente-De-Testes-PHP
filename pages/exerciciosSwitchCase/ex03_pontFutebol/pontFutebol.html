@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/styleExercicios.css">
+    <title>Pontuação Futebol</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enunciado">
+            <p class="txtEnunciado">
+                03 - Sistema de Pontuação de Futebol:
+                Faça um programa que leia o número de gols de um time e exiba sua classificação na tabela de pontuação. O número de gols e a classificação são:
+            </p>
+        </div>
+        <form action="pontFutebol.php" method="post">
+            <input type="text" name="txtGols" id="txtGols" class="inp" placeholder="Número de Gols" min="0" max="3" required>
+            <input type="submit" name="btnEnviar" class="btnEnviar" value="Enviar">
+        </form>
+        
+        <div class="saidaDados">
+            <!-- Resultados serão exibidos aqui -->
+        </div>
+
+        <a href="../../switchcase.html" class="btnVoltar">Voltar</a>
+    </div>
+</body>
+</html>
